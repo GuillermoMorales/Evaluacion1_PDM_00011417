@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+
+    tools:context=".New">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:layout_height="180dp">
+
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/factura"
             android:textSize="20sp"
             android:gravity="center"
-            android:text="Contador de Productos" />
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Usuario: Deus"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Correo: jajaja"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv3"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Total Productos: 10"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
 
@@ -31,7 +65,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:id="@+id/tv1"
+            android:id="@+id/tv11"
             android:layout_height="match_parent"
             android:text="Producto1\n#"
             android:textAlignment="center"
@@ -42,7 +76,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:id="@+id/tv2"
+            android:id="@+id/tv22"
             android:layout_height="match_parent"
             android:text="Producto2\n#"
             android:textAlignment="center"
@@ -53,7 +87,7 @@
             />
         <TextView
             android:layout_width="wrap_content"
-            android:id="@+id/tv3"
+            android:id="@+id/tv33"
             android:layout_height="match_parent"
             android:text="Producto3\n#"
             android:textAlignment="center"
@@ -75,7 +109,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/tv4"
+            android:id="@+id/tv7"
             android:text="Producto1\n#"
             android:textAlignment="center"
             android:gravity="center"
@@ -87,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Producto2\n#"
-            android:id="@+id/tv5"
+            android:id="@+id/tv8"
             android:textAlignment="center"
             android:gravity="center"
             android:background="@color/colorPrimaryDark"
@@ -98,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Producto3\n#"
-            android:id="@+id/tv6"
+            android:id="@+id/tv9"
             android:textAlignment="center"
             android:gravity="center"
             android:background="@color/colorPrimaryDark"
@@ -149,47 +183,20 @@
             />
 
 
+
+
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario"
-            android:textSize="15sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:id="@+id/et1"
-            android:layout_height="wrap_content"
-            android:hint="Escribe el usuario aquí"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo Electrónico"
-            android:layout_marginTop="15dp"
-            android:textSize="15sp"/>
-        <EditText
-            android:layout_marginTop="15dp"
-            android:id="@+id/et2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Escribe el correo aquí"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:id="@+id/button"
-            android:layout_marginTop="0dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:text="Enviar"/>
+        android:layout_gravity="center"
+        android:text="SHARE"/>
 
 
 
 
-    </LinearLayout>
+
+
 </LinearLayout>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Evaluacion1_PDM_00011417</string>
     <string name="contador_de_productos">Contador de Productos</string>
+    <string name="factura">Factura</string>
 </resources>

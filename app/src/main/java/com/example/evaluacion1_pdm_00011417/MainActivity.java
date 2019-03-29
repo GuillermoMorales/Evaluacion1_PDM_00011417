@@ -1,15 +1,18 @@
 package com.example.evaluacion1_pdm_00011417;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1;
     EditText et1, et2;
+    String numero;
     TextView tv1, tv2, tv3, tv4,tv5,tv6,tv7,tv8,tv9;
     int numero1=0, numero2=0,numero3=0,numero4=0,numero5=0,numero6=0,numero7=0,numero8=0,numero9=0;
 
@@ -93,6 +96,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent avanzar = new Intent(MainActivity.this,New.class);
+                int total = numero1 + numero2 + numero3 + numero4 + numero5 + numero6 + numero7+ numero8 + numero9;
+                avanzar.putExtra("dato",et1.getText().toString());
+                avanzar.putExtra("dato2",et2.getText().toString());
+                avanzar.putExtra("dato3",total);
+                startActivity(avanzar);
+
+            }
+        });
+
+
+
     }
 
     public void inicializar()
